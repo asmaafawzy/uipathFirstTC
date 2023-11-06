@@ -1,0 +1,246 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="537,515" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="546,2166" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Jobs Search, Search for a Job - Jobstoday.world" sap:VirtualizedContainerService.HintSize="484,2055" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="f5382c5f-f3de-47d7-a8fd-259ef2f68263" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2980" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Login_URL">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">https://www.jobstoday.world/en</Literal>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="Email">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">employeeemail1@gmail.com</Literal>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="Password">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">test123456</Literal>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="LoginTxt" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f5382c5f-f3de-47d7-a8fd-259ef2f68263" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.jobstoday.world/en" CvElementArea="1130, 91, 110, 45" CvTextArea="1163, 105, 42, 18" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="1132, 92, 106, 42" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl aaname='Login' css-selector='body&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Login' type='' tag='A' class='login ' check:innerText='Login' /&gt;" Guid="c4d73183-39a6-4111-babf-745757652fbb" InformativeScreenshot="32f8b171eab88e6bbaaf049df2f48b9d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jobs Search, Search for a Job - Jobstoday.world' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NSetText DisplayName="Set Text 'Email address *'" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="f5382c5f-f3de-47d7-a8fd-259ef2f68263" Text="[Email]" Version="V3">
+              <uix:NSetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.jobstoday.world/en/login/" CvElementArea="498, 575, 382, 39" CvType="InputBox" DesignTimeRectangle="500, 577, 378, 36" DesignTimeScaleFactor="0.8999999761581421" ElementType="InputBox" FriendlyName="'INPUT login_email'" FullSelectorArgument="&lt;webctrl id='login_email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login_email' tag='INPUT' type='email' class='input-field' aaname='' /&gt;" Guid="7749b645-ae02-45d6-a090-1a546683e65f" InformativeScreenshot="b08be6da8d8afc33d105ced90af343ba.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login to Jobstoday.world - Create Resume or Post Jobs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="508, 555, 105, 13" CvTextArgument="Email address *" CvType="Text" DesignTimeRectangle="500, 552, 378, 22" ElementType="Text" FriendlyName="'Email address *'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Email address                                                        *' check:innerText='Email address *' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAX4AAAAaCAYAAACwyDcEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASnSURBVHhe7duxSyNpGAbw+z8CwS5dEIJFigQLwy4IG7DIQg6FQA5WZPEKwSKQIpBCsAluEXJFcIvgFWIqXZC4IGohUVhiYFkXDiNsEbAYsBjY4tl3Zr7Eb9ysY7yI583zg4H9nJl3ZlI88807s7+BiIh8hcFPROQzDH4iIp9h8BMR+QyDn4jIZxj8REQ+8+yC3zQMGNdqMArfTRhS01TDQUZ+TCKiJzRk8J+g+vs0UgOWwm5XbTNinypSfxkNu3wXW/NjCJRO7FUjcVpEIJjB1jc1/skjHHMUujsoVP9j50REz8LQwV8KSgiu7NmzZNdy15T532Dwu5ly8y1t4MvnDWRLh+geraGwea5WEhF5e1jwP1kIMvgl+e2wz8blnIIhpApyEzDUKiKiexh58DdLsn5+HY33GbyKhxCIp1Ftd9GqpjEZD2M8GMaSzFBvHhBMfKnnMStBFpX1gfgMCnVtvSuYvULYo5Yw2xUsJKzzCmMysYjtzdvB30GjOIOohGo0PoHZ8gaq+jF753O6g8JcGNl6r8XVRbOcwWQkJHXlOhMZuW7tyFeHKL+dwHgkjKi1zdsKWv33BgPOe7ej1t1yfY7tUhqvXk/jRXIaqUQa5eNHarMR0f/Sw4J/bhHl8qq27OBCbWEHf2QKpWMn9FrvYjIOIfveaUeY+3kJfy1o22t4EZxG9bMaf61gVkK3dKrGwwS/V62rHeQiY8j+rUL1ewc1q552Pq2/phB4WcSBmkUbR0WpqR3TPp+YhG4GtfbNVPuiNoNAsohmb7+Pcp2RRTSurJGJgxW52cytq9+pY1/HeK/mP+v2eRb2nd/MPLaOqd+MdB20TiXov1mtHtnfOEPzq35rIyK628OCf7mCg6NDbTlHLwLt4A9KAKqxE5RpbF2qsRVYUqMfxtfWOwIVePb7gj2syPr+THqY4PeoZewuSq08DrScdP7Wq3+G8ssxpGp6z9z5mzv4x7D0Qe+vONtkN/VZ+qF97Nyus12zJMGfzKNxOSCk7d8khIXa2f3flRgnqP3qqYCI6A6P0+r5Y6P/BOAObnE7+HttjsQEUkt5eXpYlNnvA4Pfo1a3npFa2k3J4qrvXN9N+8Zy65j29jGU287Q4ew3nrjjaye7RfMGKavNFJnAbG5VbgLOKotxXEFufgpRqRNNvkFh86R/MyUiGqVH6vFvSFwqHsFvfFx2Wj+9EDT3UNDDd4jg96o1uhm/dj22Qfuppw51LP3fMDvYzmmtH/v/EtyclHG6Zrd+Vo7uO/0nIrq/Jw9+Zxa+jIZ60XmxmZHw/nXwb/8p9Yt7rhe2PZ61Rtbjvx38qsev7ed+v2CgkXN+F+dJyERzNSbbr6FlDe13EzGsqPciuHR+o16biIholB4W/IMWFYzDBj+uz1CdD8s2YUSTMyjt1+/o8Uu4y6w+FZFA/eSMXbxqCddXPa/lJvHBCl09yN1f9WSre9iyQtsj+K1wb1Vvvur56Yui/lc9E5i0vt6Zy2Or/1JW+6on4WyzUD5kq4eIHsWQwU9ERM8dg5+IyGcY/EREPsPgJyLyGQY/EZHPMPiJiHyGwU9E5DMMfiIin2HwExH5CvADp8z6GX/CB4EAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSetText.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NSetText>
+            <uix:NSetText DisplayName="Set Text 'Password *'" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="f5382c5f-f3de-47d7-a8fd-259ef2f68263" Text="[Password]" Version="V3">
+              <uix:NSetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.jobstoday.world/en/login/" DesignTimeRectangle="500, 660, 378, 36" DesignTimeScaleFactor="0.8999999761581421" ElementType="InputBoxPassword" FriendlyName="'INPUT login_password'" FullSelectorArgument="&lt;webctrl id='login_password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login_password' tag='INPUT' type='password' class='input-field' aaname='' /&gt;" Guid="2f2216d7-0989-4234-9218-e2fdde1bd224" InformativeScreenshot="2664c35a391fa26591fc32ccaf3aa905.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login to Jobstoday.world - Create Resume or Post Jobs' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="508, 638, 77, 13" CvTextArgument="Password *" CvType="Text" DesignTimeRectangle="500, 635, 378, 22" ElementType="Text" FriendlyName="'Password *'" FullSelectorArgument="&lt;webctrl aaname='Password *' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password *' tag='LABEL' type='' class='' check:innerText='Password *' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAX4AAAAaCAYAAACwyDcEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARMSURBVHhe7dq9S2NZGAbw/T8CIV06CYQUFgYLRUEwYBFhJEIWi7UYskXAIpAicIuATXCLi1sEtxAtFlMsozCoIGaLJRGWKAw6MMQBi4DFBYsLUzz7nnPPzYfjzKhrYXKfHwie+63Fc97z3vsTiIgoUBj8REQBw+AnIgoYBj8RUcAw+ImIAobBT0QUMAz+R3HhOA7cL2ZIRDTEnhj8TVSX5pDu/1nNwT44h2OOGEk3O1gJR1A5M+MHdXBY2kTLjIiIXqsnB39FAjBUPtIVsON0cHm8jkw8gvnfmlIXj6jvBr+L1h8W9j6cY2/VwmmnDtvaQdvsJSJ6bZ4X/JWmGXva23MIhS00zHjk/KDid28k7FfH5H8QQWxxTSaBkV7/ENGQe5Hg79SyEnpFnOqS38VlrYhMMoLxpIRhcgGl2lXfaqCDhp3FZDwq+6OITWdRvejtdT/uoLSszhvDeHgMGWvfq57dI5Tk3oX3vVBtVKJ99xXmmJVaxxs7TVTfJhCLJzCpnme5iHefvV3amSXnZ7F3tq/v2T3vszcOxeUZphdg1za/W/FfHlhYSc0hPTuF9GICK3Z9tFtfRDTU/n/w39ZRSUmlW9j3wu5iAzPhOVQ/6L3Ax01kwtFuaLp/FxELL2D7kzdu/ymTRtxfLVxje1muZR15E8VdHeVZP8hdnFpyb38fzmHLPlVll05M8kuQx1SQ36jBlb7WjBzvh3B7V91LJoo7s0EH/wRmUllsX/hHyXXl75lZ98Pbwen6hL7Ptyr+9r9NdL50dKunIcdfnvVPdEREr8vzgn/gR1XlO7j0w/RO9f692HP1e4AjlOW4bjWtw3kK5ePrB76SUeEpwf/rFlq3X0en8z7XmyQ+bSEtv9v2BGJmImr9LgG9uiNXEWYC8icY7f6qQQd/BPkDP/TFQ+fpbT96ueugsWtWJ0REr9iLtHoGmVbPdALpfFGCOScVf1/wq/0HFvKLCZkAopj8OQdbJoEuWUFUC28wn5T7JKeQl0ml5eeys4+CVOj2hXmvoKp/NZHMbqClKvylCDK75lo61P3q3+c9f/8kpCp+db2uh8571Fc9RETD4cWD3zle89otfi/9ft/d7a0I1CTQ+Ss30PpRq4TuSuC2CVu1fsp10zpx8C4fQXr7SK8MvMpdnikuFfqJCufedR5f8d8L+WdX/EREw+HFg9970buGQ9P6UT38WF/w63ZN38Tg/mNJqPpVt9e3V/11L+ivdcCH/PcHwjn4BaHUFObDORzqjV7vf162hZa2+lot3+rxy3m3ZsODq4Kn9/iJiIbJy7d67s5R1Z82jmE8tYDKSW2wx9/3Vc/k9Ndf/fS+6kl4x7zdQMMPasW0Xbq9fOFNJmolcGW2GI/9qmcg+MXAVz1vUJXVRIHBT0Qj4onBT0REw47BT0QUMAx+IqKAYfATEQUMg5+IKGAY/EREAcPgJyIKGAY/EVHAMPiJiAIF+A+SGrtkj23iEQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSetText.Target>
+            </uix:NSetText>
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="388,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+              <uix:NMouseScroll.SearchedElement>
+                <uix:SearchedElement>
+                  <uix:SearchedElement.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.jobstoday.world/en/login/" CvElementArea="498, 493, 382, 45" CvTextArea="666, 508, 45, 18" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="500, 495, 378, 41" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl id='btn-card-verify' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btn-card-verify' tag='BUTTON' type='submit' class='button-accept button-priamry' aaname='                                                     Login                                                ' check:innerText='Login' /&gt;" Guid="f0a7f12f-df9d-4827-af1a-0ac7b467ca6a" InformativeScreenshot="5967806b5c55ed32c0fb6e76811e9451.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login to Jobstoday.world - Create Resume or Post Jobs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                  </uix:SearchedElement.Target>
+                  <uix:SearchedElement.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:SearchedElement.Timeout>
+                </uix:SearchedElement>
+              </uix:NMouseScroll.SearchedElement>
+            </uix:NMouseScroll>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I'm not a robot'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f5382c5f-f3de-47d7-a8fd-259ef2f68263" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.jobstoday.world/en/login/" CvElementArea="511, 696, 25, 25" CvType="CheckBox" DesignTimeRectangle="511, 696, 25, 25" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'I'm not a robot'" Guid="e8013084-8c65-4970-b415-ce2c5954614c" InformativeScreenshot="6ec36a464c5da095cdc64c3b597c6d1e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login to Jobstoday.world - Create Resume or Post Jobs' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="547, 703, 82, 13" CvTextArgument="I'm not a robot" CvType="Text" DesignTimeRectangle="547, 703, 82, 13" ElementType="Text" FriendlyName="'I'm not a robot'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f5382c5f-f3de-47d7-a8fd-259ef2f68263" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.jobstoday.world/en/login/" CvElementArea="498, 388, 382, 45" CvTextArea="666, 403, 45, 17" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="500, 390, 378, 41" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl id='btn-card-verify' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btn-card-verify' tag='BUTTON' type='submit' class='button-accept button-priamry' aaname='                                                     Login                                                ' check:innerText='Login' /&gt;" Guid="16097c4e-2e29-4050-a9c5-67a064602c2a" InformativeScreenshot="58d803dcacb9d77ffae8c130f985ed01.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login to Jobstoday.world - Create Resume or Post Jobs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:06" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NGetUrl CurrentUrl="[Login_URL]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="388,87" sap2010:WorkflowViewState.IdRef="NGetUrl_1" Version="V3" />
+            <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="388,191" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyExpressionWithOperator.FirstExpression>
+                <InArgument x:TypeArguments="x:String">[Login_URL]</InArgument>
+              </uta:VerifyExpressionWithOperator.FirstExpression>
+              <uta:VerifyExpressionWithOperator.SecondExpression>
+                <InArgument x:TypeArguments="x:String">["https://www.jobstoday.world/en/"]</InArgument>
+              </uta:VerifyExpressionWithOperator.SecondExpression>
+            </uta:VerifyExpressionWithOperator>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f5382c5f-f3de-47d7-a8fd-259ef2f68263" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.jobstoday.world/en/" CvElementArea="1201, 91, 42, 38" CvType="Icon" DesignTimeRectangle="1205, 94, 32, 32" DesignTimeScaleFactor="0.8999999761581421" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl src='/assets/images/icon/user.svg' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl src='/assets/images/icon/user.svg' tag='IMG' type='' class='' aaname='' /&gt;" Guid="541e9ed4-fc3b-428a-9c6c-f0bcc5484198" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATlSURBVFhHrZfZbxRHEMb3P3MMeUCAlDeUSBZPIPmFSwiiKAIcbLMYMGRtcZgkGGLCYRuMweYS95lwiwAGAok5YsQVJc/DuFLf9NROTW/1eJF4+LQ7M9VVv+murq4pTfsuokSr1W9A043rRK3F+lwpuW4LKwOypILXQPhKg1nygZJ7BgxUC8TOQzAigWjqiujr3TG1DU7S+uFJKg9N0qr9MS3ZFeeAfFUBU4jkngA1+kAiBJdfpW/2xNQ1StQxRLS6P6zyAUrslvdlcHqGqhDp73QNpFUDBjHIt3tjWn/IDr7pCFHPSfdrPa8w2IIdxbMG1QU0a22UvKkOsOss0e0/if56TfT2v1rh/q2nRD+dyo/rGp2kmWUPwvtfamxhEIiD+2rq+kAbD2cOtx4nujtuQ4QE8C3HMh/fjxB9VclDCUweyIP6clNEncOZo/P37ID16uzvma91nH9N3TaUCTSbl0lmBsn74IUd5GN1/znR2oPOL2bKB4LyQCmU5AwGP3xpOxf9+oho8ArRjtNEvWf4+rFtJ8LLYQfCP3JqSqBWrikwhhDMcgo9f8u5wTkltlrImVDCQ5fGMtvFvfndlwOa0R7RunRr9523nUET712NEafdR4l+5B2lt/0Gzr8iKMwo7OAnCISKKw6fvLIdQQO8RGJ35WF2/82/RKfvZs/2X8qP03r0d2a3DMWTa10C9JkCkrf+pWB2XnNQyYHRm7bN8DX3vMw5CEjLBsIqwK6CXPKBvuiIkoeQfmtfSHKx+2PCttFvH7KBLqe5hDIAIJwIVaAlO+Oqk5fvbAfQYw4gduNvAjZ1Aj3j8WLXvN0tWwIEtR9w+YNktAaLJv4hah90TrBbLJvjt9zztgG3xJaNSOoSzsoMaFXEIA4Ih6Q1UAvJClsUTcyGfnbvGdGaNMeQ/PqZpc3psVI+6PKoBBhAdR52QNvrAHrBSyqVHMGHfiMaueEOXdyD0BkUbXuRnHOI73IIQGqGtp2wB/rC+mM2BUCrm3crEtsa5wu2GNPBzV0OqHXAAXXwmloDLWFLX+Vq3otjg4VZQtth2YYk+djSH+eBlqpdhre3Bn9qjfOSSszmHzygmWu4UvOuwMOLD2wHn1oX7rt4mCUUxRwQJJX6Z05OywF0/Ylr1OTNioR8vMH2lh9oJ3cHsENcwCRADQpI8giy2o69F/MB61X/5VpfaEPk+XL+cpGWOTdDM7jJlkKF3kY7gFNxgC2PGnOUz7KQ8Fy3v4NX8/7QHeA+OgTdw5caVkYECRS+r8SJVGJ9FOzmA/EVV2vtPCRU9b5z2dinaQeh29kVXKEFBs1hDRDUmb4ZTusxXrqTd9w1il29MCJAyecTQNDGSiWvcBsLCIHJzVAClf4298TVpcNJjOqN/5gdK+hUklnCMolfQM7hDwkBqZkhX/O2xjVfp0UNV5Hk7BMBav62OOkyAKFnKQgE4VNIt6XYxqGWIyTYY5z4QBqg1ZCmcEogWTb5P5u/NCsjWaJDeOOpvkbGeFv7ZQL1Zm73hwxGAcn/whnSWsjf5viW0gHwQYADFrkh6uHZ8Jcas7xyXzYr0hRaqhtItIg/W/CmslNCwtKgV0YDL02gDhyC+mggXR5wIKOxQuuC+oWuE3VlEc9m1S4NJFD+tYaBSg0rOBBkBA9JQ9WlNJhA6GsN09gS0f+XJIjPj/maRQAAAABJRU5ErkJggg==" InformativeScreenshot="9fedd6bbfbdb98ac9b150bfdfd6236cc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jobs Search, Search for a Job - Jobstoday.world' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NHover DisplayName="Hover 'DIV'" sap:VirtualizedContainerService.HintSize="388,157" HoverTime="3" sap2010:WorkflowViewState.IdRef="NHover_1" ScopeIdentifier="f5382c5f-f3de-47d7-a8fd-259ef2f68263" Version="V3">
+              <uix:NHover.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.jobstoday.world/en/company-panel//#dashboard" CvElementArea="1299, 95, 42, 42" CvType="Icon" DesignTimeRectangle="1303, 99, 36, 36" DesignTimeScaleFactor="0.8999999761581421" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' isleaf='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DIV' class='b-header__user c-switcher' aaname='' /&gt;" Guid="5c6e0361-4ae5-4e3e-be29-c3f72611a2aa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGKSURBVFhH1ZgxroJAEIapIPECnIOSxsbKgiNwA44CpbH0LlJ4AjpqLiHJvHwkS5A3ivBQ5n3JnxidnfkB2Z1dT4yzqsG2bTutySKD9/tdyrKUPM8lTVOJ41jCMJTdbteJz3zHb8QQy5glzDLYNI2cz2c5Ho/ied4sMYax5JjDWwa5+svlIofDQS0+R+Qg17t3dNJgXdeSZZla7C8iJ7mneGnwer1KkiRqgTVEbmq84qnB2+22yiOdEjWo9QzVYFVVH71zY1GLmhqqwU/856ZETY1fBnnDfN9Xk3xS1KT2mAeDzFH7/V5N8A1RezxPPhg8nU7qwG8KD0MeDC5ZIdYWHob0BlkvgyBQB31TeMCLozdYFIU6YAvhxdEbpPPQgrcQXhy9wSiK1OAthBdHZ5Amkx5OC95CeHF0Bml9tMAt5fgfBs0/YjD9koD5acb8RG1+qQPTzQKYb7fMN6xguuV3mN40gfltJ5jeuDtMH304TB8eOUwfvw1hjjJ5gDmGq2e9NHcEvAXGDYr8AAd3AsSPoKgdAAAAAElFTkSuQmCC" InformativeScreenshot="1441353937e7e9654dc00b7e8d0bb38d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jobstoday' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NHover.Target>
+            </uix:NHover>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Logout'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f5382c5f-f3de-47d7-a8fd-259ef2f68263" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.jobstoday.world/en/company-panel//#dashboard" DesignTimeRectangle="8, 85, 0, 0" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Logout'" FullSelectorArgument="&lt;webctrl aaname='                             Logout                        ' class='b-header__drop-down-text' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                             Logout                        ' class='b-header__drop-down-text' tag='SPAN' type='' check:innerText='Logout' /&gt;" Guid="9e225677-63d7-4db5-8f1a-d4fb58c736a3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jobstoday' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <uix:NGetText DisplayName="Get Text 'Login now'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="f5382c5f-f3de-47d7-a8fd-259ef2f68263" TextString="[LoginTxt]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.jobstoday.world/en/login/" CvTextArea="394, 243, 590, 46" CvType="AnyWordGroup" DesignTimeRectangle="161, 239, 1057, 50" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Login now'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='title color--light' /&gt;" Guid="67852ea6-030c-4516-8c4e-4ad3628432f6" InformativeScreenshot="8ef27b4ab1976927c55fa29817139ee5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login to Jobstoday.world - Create Resume or Post Jobs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="388,191" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_2" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyExpressionWithOperator.FirstExpression>
+                <InArgument x:TypeArguments="x:String">[LoginTxt]</InArgument>
+              </uta:VerifyExpressionWithOperator.FirstExpression>
+              <uta:VerifyExpressionWithOperator.SecondExpression>
+                <InArgument x:TypeArguments="x:String">["Login now to Jobstoday.world"]</InArgument>
+              </uta:VerifyExpressionWithOperator.SecondExpression>
+            </uta:VerifyExpressionWithOperator>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="26a7021712bc2618bff8cba358ba3611.png" Selector="&lt;html app='chrome.exe' url='https://www.jobstoday.world/en' /&gt;" Title="Jobs Search, Search for a Job - Jobstoday.world" Url="https://www.jobstoday.world/en" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
